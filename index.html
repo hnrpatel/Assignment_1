@@ -1,0 +1,33 @@
+<html> 
+<head>
+    <script type="text/javascript">
+        
+        function Subtraction()
+        {
+            var FirstNumber = document.form.txtFirstNumber.value;
+            var SecondNumber = document.form.txtSecondNumber.value;
+            var sum = Number(FirstNumber) - Number(SecondNumber);
+            alert("Your Result is: " + sum);
+        }         
+            
+    </script>
+</head>
+<body>
+ <form name="form">
+  <div style="width:400px; height:150px;">
+    <div style="width:300px; height:40px;">
+       <div style="width:150px; height:30px; float:left" >Enter First Number: </div>
+       <div style="width:150px; height:30px; float:left" ><input type="text" name="txtFirstNumber"> </div>
+    </div>
+     <div style="width:300px; height:40px;">
+        <div style="width:150px; height:30px;  float:left" >Enter Second Number: </div>
+        <div style="width:150px; height:30px; float:left" ><input type="text" name="txtSecondNumber"></div>     </div>       
+     <div style="width:400px; height:40px;">
+       
+         <div style="width:85px; height:30px;  float:left" > <input type="button"  value="Subtract" onclick="Subtraction();"> </div>
+           
+    </div>
+        </div>  
+     </form>
+  </body>
+</html>
