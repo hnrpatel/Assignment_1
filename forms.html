@@ -22,7 +22,17 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+ <script type="text/javascript">
+        
+        function Subtraction()
+        {
+            var FirstNumber = document.form.txtFirstNumber.value;
+            var SecondNumber = document.form.txtSecondNumber.value;
+            var sum = Number(FirstNumber) - Number(SecondNumber);
+            alert("Your Result is: " + sum);
+        }         
+            
+    </script>
     
 
 </head>
@@ -104,23 +114,53 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Home/About my site
+                            Forms
                         </h1>
-                        I have created this site for the purpose of understanding the concept 
-						of bootstrap css and Angular Js.
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-edit"></i> Forms
+                            </li>
+                        </ol>
                     </div>
                 </div>
-         
-
-
+                <!-- /.row -->
 
                 <div class="row">
-                    
-                    <div class="col-lg-4">
-                       
+                    <div class="col-lg-6">
+
+                        <form name="form">
+
+                            <div class="form-group">
+                                <label>value1</label>
+                                <input class="form-control" name="txtFirstNumber" ng-model="value1">
+                               
+                            </div>
+
+                          
+                            <div class="form-group">
+                                <label>value2</label>
+                               <input class="form-control" name="txtSecondNumber" ng-model="value2">
+                            </div>
+
+                            <button type="button" class="btn btn-default" value="Subtract" onclick="Subtraction();">Submit Button</button>
+                           
+
+                        </form>
+
                     </div>
-                    <div class="col-lg-4">
-                       
+                    <div class="col-lg-6">
+                      
+                        
+
+                      
+
+                        
+
+                      
+
                     </div>
                 </div>
                 <!-- /.row -->
@@ -139,11 +179,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
 
